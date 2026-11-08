@@ -1,0 +1,90 @@
+{
+  "model": "H5",
+  "architecture": "PCA + Random Forest",
+  "mode": "full",
+  "train_csv_rows": 175341,
+  "fit_rows": 140145,
+  "validation_rows": 35196,
+  "test_rows": 82332,
+  "accuracy": 0.8738765000242918,
+  "precision_attack": 0.8325720376080088,
+  "recall_attack": 0.9649916174005118,
+  "f1_attack": 0.8939044077078693,
+  "f1_weighted": 0.8717144815425044,
+  "roc_auc": 0.9639884593187558,
+  "average_precision": 0.9703254940449244,
+  "training_seconds": 41.03590790001908,
+  "threshold": 0.5,
+  "seed": 42,
+  "epochs": 15,
+  "trees": 100,
+  "features": 25,
+  "batch_size": 256,
+  "patience": 4,
+  "selected_features": [
+    "numeric__rate",
+    "numeric__sttl",
+    "numeric__sload",
+    "numeric__dload",
+    "numeric__swin",
+    "numeric__stcpb",
+    "numeric__dtcpb",
+    "numeric__dwin",
+    "numeric__dmean",
+    "numeric__ct_srv_src",
+    "numeric__ct_state_ttl",
+    "numeric__ct_dst_ltm",
+    "numeric__ct_src_dport_ltm",
+    "numeric__ct_dst_sport_ltm",
+    "numeric__ct_dst_src_ltm",
+    "numeric__ct_src_ltm",
+    "numeric__ct_srv_dst",
+    "numeric__is_sm_ips_ports",
+    "categorical__proto_arp",
+    "categorical__proto_tcp",
+    "categorical__proto_unas",
+    "categorical__service_dns",
+    "categorical__state_CON",
+    "categorical__state_FIN",
+    "categorical__state_INT"
+  ],
+  "test_rows_with_features_seen_in_train": 8541,
+  "history": {
+    "loss": [
+      0.078361403355092,
+      0.07779836844701109,
+      0.077112657219541,
+      0.07695053352137526
+    ],
+    "val_loss": [
+      0.13155178092477848,
+      0.1269128712199899,
+      0.12637289499053608,
+      0.12612137511011343
+    ],
+    "accuracy": [
+      0.9704092190231546,
+      0.9705947411609405,
+      0.9709443790359984,
+      0.971158443041136
+    ],
+    "val_accuracy": [
+      0.940163654960791,
+      0.9415274463007159,
+      0.9411296738265712,
+      0.9408455506307535
+    ]
+  },
+  "python": "3.12.4",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "joblib": "1.5.3"
+  },
+  "data_sha256": {
+    "UNSW_NB15_training-set.csv": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa",
+    "UNSW_NB15_testing-set.csv": "734fe6642edf758f7c94d7d9149426b49d202fe8e7bf0bef47392489c3c0a559"
+  }
+}

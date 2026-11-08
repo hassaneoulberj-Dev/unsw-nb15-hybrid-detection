@@ -1,0 +1,23 @@
+H3: MLP + Extra Trees
+Mode: full
+Threshold: 0.5
+accuracy: 0.886205
+precision_attack: 0.862041
+recall_attack: 0.944476
+f1_attack: 0.901378
+f1_weighted: 0.885260
+roc_auc: 0.969993
+average_precision: 0.976855
+training_seconds: 24.928508
+
+              precision    recall  f1-score   support
+
+      Normal       0.92      0.81      0.87     37000
+      Attack       0.86      0.94      0.90     45332
+
+    accuracy                           0.89     82332
+   macro avg       0.89      0.88      0.88     82332
+weighted avg       0.89      0.89      0.89     82332
+
+Test rows with feature vectors seen in train: 8541
+Original official split preserved; overlap limits generalization claims.
