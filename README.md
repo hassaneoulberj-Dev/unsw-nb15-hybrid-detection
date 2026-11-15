@@ -273,3 +273,8 @@ Les résultats nouveaux et leur état de validation sont détaillés dans [VALID
 ## Publication GitHub
 
 Publier le contenu de ce dossier avec son .gitignore. Les CSV DATA/, les modèles sérialisés, les essais smoke/ et les environnements Python restent locaux. Les PNG, TXT, JSON, scripts et documents sont publiables. Les résultats historiques doivent garder leur étiquette d’origine.
+
+
+## Contributions
+
+Pour signaler un problème ou proposer une amélioration, consulter le [guide de contribution](CONTRIBUTING.md), qui détaille les vérifications propres à ce projet.
